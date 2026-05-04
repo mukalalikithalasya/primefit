@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PrimeFit Gym</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<div class="container header-content">
+<div class="logo">
+    <img src="assets/logo.png" alt="PrimeFit Logo">
+</div>
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#services">Programs</a>
+<a href="#plans">Plans</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+<div class="hero-content">
+<h1>Train Hard. Stay Strong.</h1>
+<p>Build your dream body with expert trainers</p>
+<a href="#contact" class="btn">Join Now</a>
+</div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+<div class="container">
+<h2>About PrimeFit</h2>
+
+<div class="about-row">
+
+<div class="about-text">
+<h3>Transform Your Body & Mind 💪</h3>
+<p>
+<b>PrimeFit Gym</b> is a modern fitness center dedicated to helping individuals transform their lifestyle through health and fitness.
+We believe that fitness is not just about physical strength, but also about building discipline, confidence, and a positive mindset.
+</p>
+
+<p>
+Our gym is equipped with advanced machines and well-maintained workout spaces that support all types of training including strength training, cardio exercises, flexibility workouts, yoga sessions, and fat loss programs. 
+Each program is designed carefully to suit beginners as well as advanced fitness enthusiasts.
+</p>
+
+<p>
+At PrimeFit, we focus on building a strong fitness community where members feel motivated and supported.
+We maintain a clean, safe, and energetic environment that encourages consistency and long-term results.
+</p>
+
+<p>
+Whether your goal is weight loss, muscle gain, endurance improvement, or overall health enhancement, PrimeFit Gym provides the right guidance, equipment, and motivation to help you succeed in your fitness journey.
+</p>
+
+</div>
+
+<div class="about-images">
+  <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438">
+  <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f">
+  <img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e">
+  <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e">
+</div>
+
+<div class="about-marquee">
+<div class="marquee-track">
+
+<div>⚡ 24/7 Open Gym</div>
+<div>💪 Personal Coaching</div>
+<div>🔥 Fat Loss Programs</div>
+<div>🏋️ Strength Training</div>
+<div>🧘 Yoga Sessions</div>
+<div>🥗 Diet Plans</div>
+<div>📊 Body Tracking</div>
+<div>🎯 Goal Based Training</div>
+
+<div>⚡ 24/7 Open Gym</div>
+<div>💪 Personal Coaching</div>
+<div>🔥 Fat Loss Programs</div>
+<div>🏋️ Strength Training</div>
+<div>🧘 Yoga Sessions</div>
+<div>🥗 Diet Plans</div>
+<div>📊 Body Tracking</div>
+<div>🎯 Goal Based Training</div>
+
+</div>
+</div>
+</section>
+
+<!-- PROGRAMS -->
+<section id="services">
+<div class="container">
+<h2>Our Programs</h2>
+<div class="services">
+<a href="Strength_Training.html" class="card">🏋️ Strength Training</a>
+<a href="cardio.html" class="card">🏃 Cardio</a>
+<a href="yoga.html" class="card">🧘 Yoga</a>
+<a href="nutrition.html" class="card">🥗 Nutrition</a>
+</div>
+</div>
+</section>
+
+<section id="plans">
+<div class="container">
+<h2>Membership Plans</h2>
+
+<div class="plans">
+
+<div class="plan" onclick="selectPlan('Basic')">
+<h3>Basic Plan</h3>
+<p class="price">₹999/month</p>
+<p>Perfect for beginners who want to start their fitness journey.</p>
+<ul style="text-align:left; margin-top:10px; color:#ccc;">
+<li>✔️ Gym access (basic hours)</li>
+<li>✔️ Cardio equipment usage</li>
+<li>✔️ Basic workout guidance</li>
+<li>✔️ Free fitness assessment</li>
+</ul>
+</div>
+
+<div class="plan" onclick="selectPlan('Standard')">
+<h3>Standard Plan</h3>
+<p class="price">₹1499/month</p>
+<p>Best for regular fitness enthusiasts who want structured training.</p>
+<ul style="text-align:left; margin-top:10px; color:#ccc;">
+<li>✔️ Full gym access</li>
+<li>✔️ Strength + cardio training</li>
+<li>✔️ 2 personal trainer sessions/month</li>
+<li>✔️ Diet guidance</li>
+</ul>
+</div>
+
+<div class="plan" onclick="selectPlan('Premium')">
+<h3>Premium Plan</h3>
+<p class="price">₹1999/month</p>
+<p>Complete transformation package for serious fitness goals.</p>
+<ul style="text-align:left; margin-top:10px; color:#ccc;">
+<li>✔️ 24/7 gym access</li>
+<li>✔️ Daily personal training</li>
+<li>✔️ Customized diet plan</li>
+<li>✔️ Weekly progress tracking</li>
+</ul>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<h2>Contact Us / Join Now</h2>
+<form onsubmit="return showPopup()" action="">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+
+<select id="planSelect" required>
+<option value="">Select Plan</option>
+<option value="Basic">Basic</option>
+<option value="Standard">Standard</option>
+<option value="Premium">Premium</option>
+</select>
+
+<textarea placeholder="Message"></textarea>
+<button type="submit">Submit</button>
+</form>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="footer-content">
+
+<div class="footer-box">
+<h3>PrimeFit Gym</h3>
+<p>We help you build strength, confidence, and a healthy lifestyle with expert trainers and modern equipment.</p>
+</div>
+
+<div class="footer-box">
+<h3>Quick Links</h3>
+<p><a href="#">Home</a></p>
+<p><a href="#about">About</a></p>
+<p><a href="#services">Programs</a></p>
+<p><a href="#plans">Plans</a></p>
+<p><a href="#contact">Contact</a></p>
+</div>
+
+<div class="footer-box">
+<h3>Contact</h3>
+<p>📍 Hyderabad, India</p>
+<p>📞 +91 81065 88458</p>
+<p>📧 primefit@gmail.com</p>
+</div>
+
+<div class="footer-box">
+<h3>Opening Hours</h3>
+<p>Mon - Fri: 5 AM - 10 PM</p>
+<p>Sat: 6 AM - 8 PM</p>
+<p>Sun: Closed</p>
+</div>
+
+</div>
+
+<p style="text-align:center; margin-top:20px; color:#888;">
+© 2026 PrimeFit Gym | All Rights Reserved
+</p>
+
+</div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
