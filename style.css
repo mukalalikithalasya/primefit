@@ -14,7 +14,7 @@ html, body{
   color:white;
 }
 
-/* CONTAINER */
+
 .container{
   width:90%;
   max-width:1200px;
@@ -329,7 +329,7 @@ footer .container > p{
   color:#888;
 }
 
-/* RESPONSIVE */
+
 @media(max-width:768px){
   .about-row{
     grid-template-columns:1fr;
